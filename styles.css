@@ -14,10 +14,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 
 }
+
+
+#nav{
+
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+
+}
+
 
 .menu{
 
@@ -33,13 +43,14 @@
 
 }
 
-.menu li{
+
+#clickable_item{
 
     padding: 20px 30px 20px;
 
 }
 
-.menu li a{
+#clickable_item a{
 
     text-decoration: none;
     color: white;
@@ -47,30 +58,42 @@
 
 }
 
-.menu li:hover{
+#clickable_item:hover{
 
     color: orange;
     border-bottom: 2px solid orange;
 
 }
 
-#item_fixe{
+#item_logo{
 
-    padding: 20px;
-    background-color:rgb(86, 84, 84);
+    width: 300px;
+    height: 70px;
+    position: relative;
+
+}
+
+
+#item_logo img:nth-child(2){
+
+    position: absolute;
+    right: 0;
+    opacity: 1;
 
 }
 
-#item_fixe:hover{
 
-    border-bottom: 0;
-    color: white;
+#item_logo:hover img:nth-child(2){
+
+    opacity: 0;
 
 }
+
 
 #container{
     background-color: white;
 }
+
 
 #footer{
     background-color: yellow;
