@@ -8,16 +8,15 @@
 
 #header{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
     width: 1500px;
     height: 600px;
     background-image: url(./assets/bg_header.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
 }
 
 
@@ -40,7 +39,6 @@
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     color: white;
-    opacity: 1;
 
     list-style-type: none;
 
@@ -63,8 +61,8 @@
 
 #clickable_item:hover{
 
-    color: orange;
-    border-bottom: 2px solid orange;
+    color: #cca57c;
+    border-bottom: 2px solid #cca57c;
 
 }
 
@@ -82,7 +80,6 @@
     position: absolute;
     right: 0;    
     opacity: 1;
-    transition: opacity 0.5s;
 
 }
 
@@ -110,19 +107,57 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-left: 0px;    
 
 }
 
+#headerBottomIcons div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.2;
+    /* position: relative; */
+
+}
+
+#headerBottomIcons img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* #headerBottomIcons img:nth-child(2){
+
+    position: absolute;
+    right: 0;    
+    opacity: 1;
+
+}
+
+#headerBottomIcons:hover img:nth-child(2){
+
+    opacity: 0;
+    transition: opacity 0.5s;
+
+} */
+
 
 #headerBottomText{
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
     width: 500px;
     height: auto;
     margin-top: 100px;
     margin-left: 500px;
     border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
 
 }
 
@@ -144,21 +179,30 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: right;
     font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
 }
 
 #headerBottomText div{
 
-    margin-top: 10px;
-    color: black;
-    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+#headerBottomText div div{
+
+    color: white;
+    background-color: #cca57c;
+    opacity: 0.8;
     border-radius: 30px;
-    padding: 2px;
-    width: 100px;
-    
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;    
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: right;
     font-family: 'Oswald', sans-serif;
 
 }
