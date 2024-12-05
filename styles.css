@@ -1,0 +1,173 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#header{
+
+    width: 1500px;
+    height: 600px;
+    background-image: url(./assets/bg_header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+#nav{
+
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    height: 10%;
+
+}
+
+
+.menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    opacity: 1;
+
+    list-style-type: none;
+
+}
+
+
+#clickable_item{
+
+    padding: 20px 30px 20px;
+
+}
+
+#clickable_item a{
+
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+
+}
+
+#clickable_item:hover{
+
+    color: orange;
+    border-bottom: 2px solid orange;
+
+}
+
+#item_logo{
+
+    width: 300px;
+    height: 70px;
+    position: relative;
+
+}
+
+
+#item_logo img:nth-child(2){
+
+    position: absolute;
+    right: 0;    
+    opacity: 1;
+    transition: opacity 0.5s;
+
+}
+
+
+#item_logo:hover img:nth-child(2){
+
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+#headerBottom{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    border: 1px solid white;
+    margin-bottom: 0;
+    height: 90%;
+
+}
+
+#headerBottomIcons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+#headerBottomText{
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 500px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
+}
+
+#headerBottomText h3 {
+
+    color: white;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: end;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+#headerBottomText h4 {
+
+    color: white;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#headerBottomText div{
+
+    margin-top: 10px;
+    color: black;
+    background-color: orange;
+    border-radius: 30px;
+    padding: 2px;
+    width: 100px;
+    
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#container{
+    background-color: rgb(96, 96, 96); 
+}
+
+
+#footer{
+    background-color: yellow;
+}
